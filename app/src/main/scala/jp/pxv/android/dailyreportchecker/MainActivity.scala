@@ -10,23 +10,4 @@ class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_main)
   }
-
-  override def onCreateOptionsMenu(menu: Menu): Boolean = {
-    getMenuInflater.inflate(R.menu.menu_main, menu)
-    true
-  }
-
-  override def onOptionsItemSelected(item: MenuItem): Boolean = {
-    // Handle action bar item clicks here. The action bar will
-    // automatically handle clicks on the Home/Up button, so long
-    // as you specify a parent activity in AndroidManifest.xml.
-    val id = item.getItemId
-
-    //noinspection SimplifiableIfStatement
-    if (id == R.id.action_settings) {
-      return true
-    }
-
-    super.onOptionsItemSelected(item)
-  }
 }
