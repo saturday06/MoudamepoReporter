@@ -10,7 +10,8 @@ android {
         targetSdkVersion 22
         versionCode 1
         versionName '1.0'
-        testInstrumentationRunner 'jp.pxv.android.dailyreportchecker.TestRunner'
+        testInstrumentationRunner 'jp.pxv.android.dailyreportchecker.MultiDexAndroidJUnitRunner'
+        multiDexEnabled true
     }
 
     buildTypes {
@@ -22,7 +23,6 @@ android {
 
     productFlavors {
         dev {
-            multiDexEnabled true
             minSdkVersion 21 // To reduce compilation time
         }
 
